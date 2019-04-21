@@ -14,6 +14,8 @@ public class NonStaticMembersDemo {
 	public static void main(String[] args) {
 		System.out.println("Inside Main method");
 		new NonStaticMembersDemo();
+		new NonStaticMembersDemo();
+		new NonStaticMembersDemo();
 	}
 
 	static {
