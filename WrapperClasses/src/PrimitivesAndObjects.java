@@ -25,11 +25,14 @@ public class PrimitivesAndObjects {
 		System.out.println("-----------------------------");
 		System.out.println("-----------------------------");
 
-		test();
+		testFloat();
+		System.out.println("-----------------------------");
+		System.out.println("-----------------------------");
+		testDouble();
 
 	}
 
-	public static void test() {
+	public static void testFloat() {
 		float f1 = 12.456f;
 
 		// boxing:
@@ -47,6 +50,26 @@ public class PrimitivesAndObjects {
 		// autounboxing:
 		float f3 = ff1;
 		System.out.println(f3);
+
+	}
+
+	public static void testDouble() {
+		double x = 2.3;
+		// boxing:
+		Double x1 = Double.valueOf(x);
+		System.out.println(x1);
+
+		// autoboxing
+		Double x2 = x;
+		System.out.println(x2);
+
+		// unboxing:
+		double x3 = x1.doubleValue();
+		System.out.println(x3);
+
+		// autounboxing:
+		double x4 = x1;
+		System.out.println(x4);
 
 	}
 
